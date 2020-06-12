@@ -1,0 +1,92 @@
+@charset "utf-8";
+/*初始化样式 */
+body,div,p,h1,h2,h3,h4,h5,form,table,dl,dt,dd,ul,li,a,img,span,em,i,strong,b,input,textarea,select,label{ margin:0px; padding:0px;}
+li{ list-style:none;}
+img{ border:0 none;}
+em,i{ font-style:normal;}
+a{ color:#000; text-decoration:none;}
+a:hover{ color:#e8240f;}
+.clearFix{ width:1004px; height:auto; margin:0px auto;}
+.clearFix:after{ display:block; clear:both; height:0; visibility:hidden; content:'.';}
+body{ font-size:12px; font-family:'宋体'; color:#000;}
+/*logo及导航*/
+.top{ border-top:#7f7f7f 4px solid;}
+.logo{ float:left; width:231px; height:84px; border-right:#c4c4c4 1px solid;}
+.web_map{ float:right; width:auto; padding-right:2px; height:40px; line-height:40px; color:#a3a2a2;}
+.web_map a{color:#a3a2a2; margin:0px 10px;}
+.web_map a:hover{color:#e8240f;}
+.nav{ float:left; width:772px; height:40px; background:url(../img/nav_bg.png) repeat-x 0px -40px;}
+.nav li{ float:left; width:auto; height:40px; line-height:40px; padding:0px 24px 0px 21px; background:url(../img/nav_bg.png) no-repeat right top;}
+/*flash*/
+.flash{ height:340px; background:url(../img/flash_bg.png) repeat-x left bottom;}
+/*主要部分*/
+.main_left{ float:left; width:188px; height:auto;}
+.main_L_nav{ width:100%; height:auto; padding-top:10px;}
+.main_L_nav li{ width:100%; height:26px; margin-top:3px; background:url(../img/main_nav_bg.png) no-repeat; text-align:center; line-height:26px;}
+.main_L_contact{ display:block; width:184px; height:70px; padding:1px; border:#ccc9c9 1px solid; margin-top:4px;}
+.main_L_address{ width:181px; height:auto; margin-top:11px; padding-bottom:34px;}
+.main_L_address li{ width:100%; height:auto; line-height:26px;}
+.main_middle{ float:left; width:556px; height:auto; margin-left:37px;}
+.main_M_intr{ width:100%; height:168px;}
+.main_M_intr img{ float:left; width:140px; height:140px; margin-top:15px;}
+.main_M_intr p{ float:left; width:398px; height:132px; line-height:22px; margin:15px 0px 0px 9px; overflow:hidden;}
+.main_pro_list{ width:526px; height:auto; margin:19px 0px 0px 14px; overflow:hidden;}
+.main_pro_list dl{ float:left; width:127px; height:153px; margin-right:21px;}
+.main_pro_list dl dt{ width:125px; height:125px; border:#d3d3d3 1px solid;}
+.main_pro_list dl dd{ width:100%; height:26px; line-height:26px; text-align:center; overflow:hidden;}
+.main_pro_div{ width:1000%; overflow:hidden;}
+.main_right{ float:right; width:199px; height:auto;}
+.main_R_flash{ position:relative; width:190px; height:190px; padding:3px; border:#dbdada 1px solid; margin-top:10px;}
+.m_R_img{ position:relative; z-index:5; width:190px; height:190px; overflow:hidden;}
+.m_R_img li{ position:absolute; left:0px; top:0px; z-index:5;}
+.m_R_img li.m_R_imgCur{ z-index:6;}
+.m_R_btn{ position:absolute; left:3px; bottom:3px; z-index:6; width:72px; height:14px;}
+.m_R_btn li{ float:left; width:24px; height:14px; text-align:center; line-height:14px; background:#060606; color:#fff; cursor:pointer;}
+.m_R_btn li.m_R_btnCur{ background:#bd0404;}
+.main_tit{ width:100%; height:34px; background-image:url(../img/main_titBg.png);}
+.main_tit h3{ float:left; width:auto; height:auto; padding:12px 0px 0px 25px; color:#1952c6; font-size:13px; font-weight:400;}
+.main_tit i{ color:#9a9a9a; font-size:12px; padding-left:15px;}
+.main_tit a{ float:right; margin:12px 5px 0px 0px;}
+.main_M_tit{ background-position:0px -34px;}
+.main_R_tit{ background-position:0px -68px;}
+.main_R_news{ width:100%; height:auto; margin-top:16px;}
+.main_R_news li{ position:relative; padding-left:19px; height:24px; line-height:24px;}
+.main_R_news li i{ position:absolute; left:5px; top:9px; width:0px; height:0px; overflow:hidden; border-style:solid; border-width:3px; border-color:#fff #fff #fff #777676;}
+.main_R_news li a{ color:#777676;}
+.main_R_news li a:hover{ color:#e8240f;}
+/*新闻列表页*/
+.list_right{ float:right; width:778px; height:auto;}
+.list_tit{ position:relative; height:30px; padding:5px 0px 0px 32px; background:url(../img/list_bg.png) repeat-x;}
+.list_tit span{ position:absolute; left:20px; top:8px; width:5px; height:12px; line-height:12px; font-size:12px; overflow:hidden; color:#ea3724; top:6px\9; *top:7px;}
+.list_tit span i{ display:block; margin-left:-6px;}
+.news_list{ width:715px; height:auto; margin:9px 0px 0px 20px;}
+.news_list li{ padding-left:25px; height:39px; line-height:39px; border-bottom:#9e9c9c 1px dotted; background:url(../img/news_btn.png) no-repeat;}
+.news_list li a{ color:#191919;}
+.news_list li a:hover{color:#e8240f;}
+.news_list li em{ float:right;}
+/*产品列表*/
+.product{ width:100%; height:auto; overflow:hidden; padding-bottom:10px;}
+.product dl{ float:left; width:346px; height:143px; border-bottom:#eaeaea 1px dashed; margin:14px 17px 4px 22px; display:inline;/**去除ie6双边距bug*/}
+.product dl dt{ float:left; width:125px; height:125px; border:#d3d3d3 1px solid;}
+.product dl dd{ float:left; width:190px; height:auto; margin-left:19px;}
+.product dl dd h4{ width:100%; height:26px; line-height:26px; font-size:18px;  font-weight:400; overflow:hidden;}
+.product dl dd h4 a{color:#323232;}
+.product dl dd h4 a:hover{color:#e8240f;}
+.product dl dd p{ width:100%; height:88px; line-height:22px; margin-top:8px; color:#323232; font-size:13px; overflow:hidden;}
+/*分页*/
+.page{ width:100%; height:69px; padding-top:21px; text-align:center;}
+.page a{ display:inline-block; width:31px; height:20px; text-align:center; line-height:20px; border:#b6b5b5 1px solid;}
+.page a.page_Cur,.page a:hover{ background:#ea3724; color:#fff;}
+/*联系我们*/
+.contact{ margin-left:22px; height:auto;}
+.contact h2{ height:43px; line-height:43px; font-size:14px;}
+.contact_map{ display:block; width:532px; height:245px;  padding:5px; border:#e1dddd 1px solid;}
+.contact_main{ height:169px; padding-top:11px;}
+.contact_main li{ height:26px; line-height:26px;}
+/*详细页*/
+.deatil{ width:725px; height:auto; margin-left:19px;}
+.deatil h2{ width:100%; height:18px; padding-top:32px; text-align:center; font-size:14px; color:#5e5a5a;}
+.deatil_span{ display:block; width:100%; height:30px; text-align:center; line-height:30px; color:#5e5a5a;}
+.deatil p{ width:100%; height:auto; line-height:20px; color:#5e5a5a; margin:10px 0px 0px 0px; padding-bottom:2px; text-indent:2em;}
+/*底部*/
+.footer{ height:63px; padding-top:13px; line-height:22px; border-top:7px solid #e2e1e1; color:#a4a2a2; text-align:center;}
